@@ -1,0 +1,451 @@
+html{
+    scroll-behavior: smooth;
+}
+body {
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+
+.wrapper {
+    background-image: url("./../img/Layer\ 1.png");
+    height: 2447px;
+    background-repeat: no-repeat;
+    width: 100%;
+    float: left;
+}
+.container {
+    margin: 0 auto;
+    width: 1300px;
+}
+
+
+.container__top{
+    position: relative;
+    width: 100%;
+    height: 800px;
+    float: left;
+}
+
+.menu {
+    background-image: url("./../img/Background-container.png");
+    height: 565px;
+    background-repeat: no-repeat;
+    transform: translateY(55px);
+
+}
+
+.left__menu {
+    background-image: url("./../img/menu.png");
+    background-repeat: no-repeat;
+    width: 220px;
+    height: 420px;
+    position: absolute;
+    top: 50px;
+    left: -60px;
+}
+
+.right__menu {
+    position: absolute;
+    top: 460px;
+    right: -100px;
+}
+
+
+.right__menu button {
+    display: inline-block;
+    border: none;
+    background-color: transparent;
+    
+}
+
+
+.menu_list {
+    list-style: none;
+    padding: 109px 20px 0 0px;
+}
+
+
+
+.right__menu button img{
+    transition: 0.3s;
+
+}
+
+.right__menu button img:hover {
+    opacity: 0.9;
+    transform: scale(1.05);
+}
+
+
+
+.menu_item {
+    text-align: center;
+    font-size: 15px;
+    color: #fff;
+}
+
+.menu_item img{
+    margin-bottom: 13px;
+    cursor: pointer;
+    opacity: 0.8;
+}
+
+.menu_item img:hover {
+    opacity: 1;
+    transform: translateX(2px);
+
+}
+
+
+
+.luottang{
+    text-align: center;
+    margin-top: 615px;
+}
+
+.luottang__item img{
+    transition: 0.3s;
+}
+
+.luottang__item img:hover {
+    opacity: 0.8;
+    transform: scale(1.05);
+}
+
+
+.container__rank {
+    margin-top: 135px;
+    text-align: center;
+}
+
+
+
+.container__bottom {
+    margin-top: 700px;
+    width: 100%;
+    float: left;
+}
+
+
+.bottom__card {
+    width: 1200px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.card{
+    position: relative;
+    margin-bottom: 10px;
+    background-color: transparent;
+    border: none;
+}
+
+
+.card a{
+    display: inline-block;
+    position: absolute;
+    top: 350px;
+    left: 82px;
+}
+.card a:hover {
+    transform: translateX(3px);
+    
+}
+
+/* reponsive 1536x731*/
+
+@media only screen and (max-width: 1600px){
+    .wrapper {
+        height: 1920px;
+        background-size: 100%;
+    }
+
+    
+    .left__menu {
+        top: -5px;
+        left: 40px;
+        transform: scale(0.8);
+    }
+    
+    .right__menu {
+        position: absolute;
+        top: 340px;
+        right: 20px;
+    }
+    
+
+    .right__menu a {
+        transform: scale(0.8);
+    }
+
+
+    .luottang{
+        text-align: center;
+        margin-top: 470px;
+        transform: scale(0.8);
+        margin-left: -15px;
+    }
+
+    .container__rank {
+        margin-top: 70px;
+        transform: scale(0.8);
+    }
+    
+    .container__bottom {
+        margin-top: 300px;
+        transform: scale(0.8);
+        margin-left: 0px;
+    }
+}
+
+/* reponsive 1366x768 */
+
+@media only screen and (max-width: 1366px) and (max-height:768px){
+    .wrapper {
+        height: 1710px;
+        background-size: 100%;
+
+    }
+
+    
+    .left__menu {
+        top: -30px;
+        left: 80px;
+        transform: scale(0.7);
+    }
+    
+    .right__menu {
+        position: absolute;
+        top: 300px;
+        right: 70px;
+    }
+    
+
+    .right__menu a {
+        transform: scale(0.7);
+    }
+
+
+    .luottang{
+        text-align: center;
+        margin-top: 410px;
+        transform: scale(0.7);
+        margin-left: -15px;
+    }
+
+    .container__rank {
+        margin-top: 35px;
+        transform: scale(0.7);
+    }
+    
+    .container__bottom {
+        margin-top: 150px;
+        transform: scale(0.7);
+    }
+}
+
+
+/* modal BXH */
+
+.modal-dialog {
+    max-width: 425px;
+}
+
+.modal-content {
+    border: none;
+    width: 100%;
+    background: none;
+    
+}
+.modal-bg{
+    background-image: url("./../img/modal-popup-img.png");
+    height: 580px;
+    width: 100%;
+    background-repeat: no-repeat;
+    position: relative;
+}
+
+.close {
+    text-shadow: none;
+}
+
+.close span{
+    position: absolute;
+    font-size: 15px;
+    padding: 15px;
+    color: red;
+    border: none;
+    top: 0px;
+    left: 377px;
+    
+}
+
+/* Modal the le */
+
+.thele-btn {
+    display: inline-block;
+    border: none;
+    background-color: transparent;
+}
+
+.modal-thele-bg{
+    background-image: url("./../img/thele-modal-background.png");
+    height: 640px;
+    width: 720px;
+    background-repeat: no-repeat;
+    color:#fff;
+    position: relative;
+}
+
+.modal-content {
+    border: none;
+    background: none;
+}
+
+.close-thele {
+    position: absolute;
+    top: 55px;
+    left: 622px;
+    text-shadow: none;
+    border: none;
+    outline: none;
+    background: none;
+}
+
+.close-thele span{
+    position: absolute;
+    left: 6px;
+    top: 0px;
+    font-size: 15px;
+    padding: 10px;
+    color: #fff;
+    border: none;
+    cursor: pointer;
+}
+
+
+.modal-dialog-thele {
+    max-width: 670px;
+}
+
+
+
+/* /////////////////////// */
+
+
+
+
+.modal-thele-text {
+    margin-top: 50px;
+    font-size: 17px;
+}
+
+.title {
+    color: #fff;
+    margin-bottom: 50px;
+    font-weight: 700;
+    text-align: center;
+}
+
+.modal-thele-text {
+    width: 600px;
+    scroll-behavior: auto;
+    margin-left: 40px;
+}
+
+.modal-thele-content {
+    height: 450px;
+    overflow: scroll;
+    overflow-x: hidden;
+}
+
+
+.modal-thele-content::-webkit-scrollbar { 
+    width: 5px; 
+    border-radius: 4px;
+} 
+
+.modal-thele-content::-webkit-scrollbar-thumb {
+    background-color: #ccc;
+    border-radius: 4px;
+}
+
+.modal-thele-content::-webkit-scrollbar-track {
+    background-color: #c3502c;
+}
+
+
+
+.modal-thele-content .ten-de-muc{
+    color: yellow;
+    font-size: 20px;
+    margin-bottom: 20px;
+}
+
+
+
+.modal-thele-text .muc-1{
+    display: flex;
+    margin: 6px 0;
+}
+
+.modal-thele-text .muc-1 p:first-child {
+    color: #678259;
+    margin-right: 6px;
+}
+
+
+/* modal bch  text*/
+.modal-bxh-text {
+   display: flex;
+   margin-top: 150px;
+   margin-left: 20px;
+}
+
+.bxh-list {
+    margin-right: 80px;
+}
+
+.bxh-item, .luottang-item{
+    margin-top: 5px;
+    font-weight: 500;
+}
+
+.luottang-list {
+    list-style: none;
+}
+
+.bxh-item:nth-child(1), .luottang-item:nth-child(1){
+    color: orange;
+}
+
+.bxh-item:nth-child(2), .luottang-item:nth-child(2){
+    color: green;
+
+}
+
+.bxh-item:nth-child(3), .luottang-item:nth-child(3){
+    color: violet;
+}
+
+
+
+
+/* modal lich su */
+
+.lichsu-btn {
+    display: inline-block;
+    border: none;
+    background-color: transparent;
+}
+
+.modal-lichsu-content {
+    background-color: #fff;
+}
+
+.modal-lichsu-btn a{
+    color: #fff;
+}
